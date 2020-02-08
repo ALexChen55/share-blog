@@ -5,16 +5,16 @@ function resolve(dir) {
   return path.join(__dirname, dir);
 }
 module.exports = {
-  title: "个人备忘",
-  description: "自己对学习、生活的一些记录",
+  title: "我们的纪念",
+  description: "我们生活中的记录",
   host: getIPAddress(),
   port: port,
   base:"/share-blog/",
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
-      { text: "文章", link: "/blog/" },
-      { text: "测试", link: "/test/" }
+      { text: "计算机类", link: "/computer/" },
+      { text: "兴趣爱好", link: "/hobby/" }
     ],
     sidebar: "auto"
   },
