@@ -1,11 +1,5 @@
 <template>
   <div>
-    <div class="container mx-auto">
-      <button
-        class="bg-blue-500 sm:bg-green-500 md:bg-indigo-500 lg:bg-red-500 xl:bg-black ..."
-      >Button</button>
-    </div>
-
     <div class="article-item" v-for="post in posts" @click="handleJumpPage(post.path)">
       <img class="article-image" :src="post.frontmatter.image" alt="post.frontmatter.title" />
       <div class="article-description">
