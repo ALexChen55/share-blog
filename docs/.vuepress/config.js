@@ -9,6 +9,7 @@ module.exports = {
   description: "自己对学习、生活的一些记录",
   host: getIPAddress(),
   port: port,
+  base:"/share-blog/",
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
