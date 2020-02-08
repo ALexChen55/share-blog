@@ -1,0 +1,21 @@
+{
+  "name": "alex-blog",
+  "version": "1.0.0",
+  "description": "个人备忘",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.2.0",
+    "@vuepress/plugin-pwa": "^1.2.0"
+  },
+  "dependencies": {}
+}
