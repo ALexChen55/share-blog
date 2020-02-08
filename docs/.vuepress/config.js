@@ -4,12 +4,13 @@ const port = 5599;
 function resolve(dir) {
   return path.join(__dirname, dir);
 }
+
 module.exports = {
   title: "我们的纪念",
   description: "我们生活中的记录",
   host: getIPAddress(),
   port: port,
-  base:"/share-blog/",
+  base: "/share-blog/",
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
@@ -49,5 +50,6 @@ module.exports = {
   ],
   chainWebpack: config => {
     config.resolve.mainFiles.add("index").add("Index");
-  }
+  },
+  postcss: { plugins: [require('tailwindcss'), require('autoprefixer')] }
 };
