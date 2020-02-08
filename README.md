@@ -1,2 +1,2 @@
 # share-blog
-This blog is belong to Alex and Blanche
+This blog is belong to Alex and Blanche for work.
