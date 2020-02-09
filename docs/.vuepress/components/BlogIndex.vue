@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="article-item" v-for="post in posts" @click="handleJumpPage(post.path)">
-      <img class="article-image" :src="post.frontmatter.image" alt="post.frontmatter.title" />
-      <div class="article-description">
+  <div class="grid grid-cols-1">
+    <div class="flex border border-gray-200 rounded p-2 m-2" v-for="post in posts" @click="handleJumpPage(post.path)">
+      <img class="w-3/12" :src="post.frontmatter.image" alt="post.frontmatter.title" />
+      <div class="w-9/12">
         <div>{{ post.frontmatter.title }}</div>
         <p>{{ post.frontmatter.description }}</p>
       </div>
@@ -31,17 +31,4 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.article-item {
-  display: flex;
-}
-
-.article-image {
-  width: 20%;
-  object-fit: cover;
-}
-
-.article-description {
-  flex: 80%;
-  padding-left: 1em;
-}
 </style>
