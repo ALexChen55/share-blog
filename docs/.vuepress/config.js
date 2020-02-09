@@ -6,7 +6,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  title: "我们的纪念",
+  title: "私たちの記念",
   description: "我们生活中的记录",
   host: getIPAddress(),
   port: port,
@@ -14,8 +14,14 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
-      { text: "计算机类", link: "/computer/" },
-      { text: "兴趣爱好", link: "/hobby/" }
+      { text: "专业", link: "/major/",
+	  items:[
+		  { text: "vue", link: "/major/vue/" },
+		  { text: "react", link: "/major/react/" }
+		],
+	  },
+      { text: "爱好", link: "/hobby/" },
+      { text: "影视", link: "/video/" },
     ],
     sidebar: "auto"
   },
