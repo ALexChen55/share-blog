@@ -17,7 +17,8 @@ module.exports = {
       { text: "专业", link: "/major/",
 	  items:[
 		  { text: "vue", link: "/major/vue/" },
-		  { text: "react", link: "/major/react/" }
+		  { text: "react", link: "/major/react/" },
+		  { text: "others", link: "/major/others/" }
 		],
 	  },
       { text: "爱好", link: "/hobby/" },
