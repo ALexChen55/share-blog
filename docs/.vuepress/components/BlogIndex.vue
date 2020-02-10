@@ -1,10 +1,17 @@
 <template>
   <div class="grid grid-cols-1">
-    <div class="flex border border-gray-200 rounded p-2 m-2" v-for="post in posts" @click="handleJumpPage(post.path)">
-      <img class="w-3/12" :src="post.frontmatter.image" alt="post.frontmatter.title" />
+    <div
+      class="flex border border-gray-200 rounded p-2 m-2 cursor-pointer"
+      v-for="post in posts"
+      @click="handleJumpPage(post.path)"
+    >
+      <div class="w-3/12 h-32 relative">
+        <img class="w-32 h-32 absolute bottom-0 left-0 right-0 top-0 m-auto" :src="post.frontmatter.image" alt="post.frontmatter.title" />
+      </div>
       <div class="w-9/12">
-        <div>{{ post.frontmatter.title }}</div>
-        <p>{{ post.frontmatter.description }}</p>
+        <div class="text-xl leading-relaxed">{{ post.frontmatter.title }}</div>
+        <div class="text-blue-800 text-sm">{{post.frontmatter.date | dateString}}</div>
+        <p class="text-base text-gray-500">{{ post.frontmatter.description }}</p>
       </div>
     </div>
   </div>
@@ -23,6 +30,11 @@ export default {
         );
     }
   },
+  filters: {
+    dateString(val) {
+      return val.split("T")[0];
+    }
+  },
   methods: {
     handleJumpPage(path) {
       this.$router.push({ path });
@@ -30,5 +42,4 @@ export default {
   }
 };
 </script>
-<style lang="stylus" scoped>
-</style>
+<style lang="stylus" scoped></style>
