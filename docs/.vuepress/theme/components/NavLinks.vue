@@ -133,8 +133,18 @@ export default {
   .nav-item
     position relative
     display inline-block
-    margin-left 1.5rem
+    margin-left .8rem
+    margin-right .8rem
     line-height 2rem
+    position relative
+    &:not(:last-child):before
+      content ''
+      position absolute
+      top 10px
+      right -14px
+      width 2px
+      height 15px
+      background-color #e2e8f0
     &:first-child
       margin-left 0
   .repo-link

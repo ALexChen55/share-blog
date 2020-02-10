@@ -111,6 +111,8 @@
   .navbar
     padding $navbar-vertical-padding $navbar-horizontal-padding
     line-height $navbarHeight - 1.4rem
+    border-bottom 1px solid #e2e8f0
+    background #fff
     a, span, img
       display inline-block
     .logo
@@ -126,7 +128,6 @@
     .links
       padding-left 1.5rem
       box-sizing border-box
-      background-color white
       white-space nowrap
       font-size 0.9rem
       position absolute

@@ -135,3 +135,12 @@
     }
   };
 </script>
+<style lang="stylus">
+  .theme-container
+    height 100vh
+	overflow hidden
+    .search-box
+      input
+        background url(/share-blog/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat;
+        height 1.8rem
+</style>

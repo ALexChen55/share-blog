@@ -27,7 +27,8 @@ module.exports = {
     sidebar: "auto"
   },
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+	anchor:{ permalink: true, permalinkBefore: true, permalinkSymbol: '🖌' }
   },
   locales: {
     "/": {
